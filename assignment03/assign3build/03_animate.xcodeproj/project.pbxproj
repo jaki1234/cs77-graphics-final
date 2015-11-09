@@ -412,6 +412,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0710;
 			};
 			buildConfigurationList = FFDA2CECAFC04102907A01EB /* Build configuration list for PBXProject "03_animate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -546,17 +547,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+				SYMROOT = ../build;
 			};
 			name = RelWithDebInfo;
 		};
 		0E0E7DDF6BD54D3E84B3CE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+				SYMROOT = ../build;
 			};
 			name = Debug;
 		};
@@ -566,7 +568,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Debug;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -575,12 +577,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../assignment03/src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -588,8 +590,8 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug/libcommon.a,
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug/libglfw3.a,
+					../bin/xcode/Debug/libcommon.a,
+					../bin/xcode/Debug/libglfw3.a,
 					"-framework",
 					OpenGL,
 					"-framework",
@@ -616,7 +618,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = 03_animate;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				SYMROOT = ../src/apps;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -636,20 +638,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
-				);
+				HEADER_SEARCH_PATHS = "../src/common/src/**";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -666,7 +661,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Debug;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -675,12 +670,13 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					./src,
+					./src/apps,
+					./src/common,
+					./src/common/ext/glew,
+					./src/common/ext/glfw/include,
+					./src/common/ext/lodepng,
+					./src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -690,7 +686,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = common;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				SYMROOT = ./assign3build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -710,20 +706,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
-				);
+				HEADER_SEARCH_PATHS = "../src/common/src/**";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -738,7 +727,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/MinSizeRel;
+				CONFIGURATION_TEMP_DIR = "./$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -747,12 +737,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
-					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/src,
+					../src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -764,7 +754,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				SYMROOT = ../src/common/ext/glfw/src;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -784,20 +774,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
-				);
+				HEADER_SEARCH_PATHS = "../src/common/src/**";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -814,7 +797,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Release;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -823,12 +806,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../assignment03/src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -836,8 +819,8 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release/libcommon.a,
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release/libglfw3.a,
+					../bin/xcode/Release/libcommon.a,
+					../bin/xcode/Release/libglfw3.a,
 					"-framework",
 					OpenGL,
 					"-framework",
@@ -864,7 +847,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = 03_animate;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				SYMROOT = ../src/apps;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -881,7 +864,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/RelWithDebInfo;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -890,12 +873,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../assignment03/src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -903,8 +886,8 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo/libcommon.a,
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo/libglfw3.a,
+					../bin/xcode/RelWithDebInfo/libcommon.a,
+					../bin/xcode/RelWithDebInfo/libglfw3.a,
 					"-framework",
 					OpenGL,
 					"-framework",
@@ -931,7 +914,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = 03_animate;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				SYMROOT = ../src/apps;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -952,19 +935,19 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -979,7 +962,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Release;
+				CONFIGURATION_TEMP_DIR = "./$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -988,12 +972,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
-					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/src,
+					../src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1005,7 +989,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				SYMROOT = ../src/common/ext/glfw/src;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1022,7 +1006,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+				SYMROOT = ../build;
 			};
 			name = MinSizeRel;
 		};
@@ -1035,20 +1019,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
-				);
+				HEADER_SEARCH_PATHS = "../src/common/src/**";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1063,7 +1040,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/RelWithDebInfo;
+				CONFIGURATION_TEMP_DIR = "./$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1072,12 +1050,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
-					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/src,
+					../src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1089,7 +1067,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				SYMROOT = ../src/common/ext/glfw/src;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1104,7 +1082,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Debug;
+				CONFIGURATION_TEMP_DIR = "./$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1113,12 +1092,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
-					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/src,
+					../src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1127,7 +1106,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = glfw3;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				SYMROOT = ../src/common/ext/glfw/src;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1144,7 +1123,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/MinSizeRel;
 				EXECUTABLE_PREFIX = "";
 				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1153,12 +1132,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../assignment03/src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_SEARCH_PATHS = "";
@@ -1166,8 +1145,8 @@
 				OTHER_LDFLAGS = (
 					"-Wl,-search_paths_first",
 					"-Wl,-headerpad_max_install_names",
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel/libcommon.a,
-					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel/libglfw3.a,
+					../bin/xcode/MinSizeRel/libcommon.a,
+					../bin/xcode/MinSizeRel/libglfw3.a,
 					"-framework",
 					OpenGL,
 					"-framework",
@@ -1194,7 +1173,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = 03_animate;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				SYMROOT = ../src/apps;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1211,7 +1190,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+				SYMROOT = ../build;
 			};
 			name = Release;
 		};
@@ -1225,19 +1204,19 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1254,7 +1233,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/MinSizeRel;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1263,12 +1242,13 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					./src,
+					./src/apps,
+					./src/common,
+					./src/common/ext/glew,
+					./src/common/ext/glfw/include,
+					./src/common/ext/lodepng,
+					./src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1278,7 +1258,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = common;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				SYMROOT = ./assign3build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1295,7 +1275,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/RelWithDebInfo;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -1304,12 +1284,13 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					./src,
+					./src/apps,
+					./src/common,
+					./src/common/ext/glew,
+					./src/common/ext/glfw/include,
+					./src/common/ext/lodepng,
+					./src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1319,7 +1300,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = common;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				SYMROOT = ./assign3build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1340,19 +1321,19 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1373,19 +1354,19 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					../src,
+					../src/apps,
+					../src/common,
+					../src/common/ext/glew,
+					../src/common/ext/glfw/include,
+					../src/common/ext/lodepng,
 				);
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				SYMROOT = .;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1402,7 +1383,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
 				CLANG_CXX_LIBRARY = "libc++";
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				CONFIGURATION_BUILD_DIR = ../bin/xcode/Release;
 				EXECUTABLE_PREFIX = lib;
 				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1411,12 +1392,13 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
-					/Users/pinkmauikitten/Desktop/assignment03/src,
-					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
-					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+					./src,
+					./src/apps,
+					./src/common,
+					./src/common/ext/glew,
+					./src/common/ext/glfw/include,
+					./src/common/ext/lodepng,
+					./src/common/ext/glfw/src,
 				);
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
@@ -1426,7 +1408,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = common;
 				SECTORDER_FLAGS = "";
-				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				SYMROOT = ./assign3build;
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = (
 					"-Wmost",

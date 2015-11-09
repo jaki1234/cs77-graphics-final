@@ -30,7 +30,7 @@
 */
 
 //#include <GL/glew.h>
-#include <glew.h>
+#include "glew.h"
 
 #if defined(_WIN32)
 #  include <wglew.h>

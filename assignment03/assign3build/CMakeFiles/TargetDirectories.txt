@@ -1,0 +1,5 @@
+/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/CMakeFiles/ALL_BUILD.dir
+/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps/CMakeFiles/03_animate.dir
+/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/CMakeFiles/common.dir
+/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/CMakeFiles/ZERO_CHECK.dir
+/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src/CMakeFiles/glfw.dir

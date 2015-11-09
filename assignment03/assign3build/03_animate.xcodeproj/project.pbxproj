@@ -1,0 +1,1512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		20545EA76A54438B93A8E39E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7F663D94C8E94567B144C410 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				37B3DFD53A5E422AA8AB02FF /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		BDD09E7EA8BC42DE88ACF3F6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BE11A720333C4F59906C515A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A16EB0DCDEDF4CD5B9250B12 /* CMake Rules */,
+			);
+			dependencies = (
+				1DA0307A3960440291F4F163 /* PBXTargetDependency */,
+				1BA35298D21742F2A74202E8 /* PBXTargetDependency */,
+				6A5804D41C064F928F4E5FF6 /* PBXTargetDependency */,
+				BF4226F4EAD64327A39EB3B2 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0004E9B423E848B4BD77A7A0 /* cocoa_clipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF439EA81CA476AAD019F2B /* cocoa_clipboard.m */; settings = {COMPILER_FLAGS = ""; }; };
+		0A691015BF794311AFD4D865 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E34C618CC6A4D258B37668B /* cocoa_init.m */; settings = {COMPILER_FLAGS = ""; }; };
+		15B8E6290AE2418A8ABC14B1 /* clipboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 10F32549056143A1B4AFF1F2 /* clipboard.c */; settings = {COMPILER_FLAGS = ""; }; };
+		1927718B957F46CA86F14C4D /* tesselation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E84D7AFE456B41E5BFA0F3A9 /* tesselation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		19DC010CDFCD482AB9D5CD5E /* time.c in Sources */ = {isa = PBXBuildFile; fileRef = 288736F164E341B28AA924F0 /* time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		21DFAFB97DAC4186BB56F5A3 /* cocoa_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C64D470716249B685B05316 /* cocoa_time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		22D7D23607F641B985CE08A4 /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD262358F16E4EAEA600956B /* lodepng.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2F612ED377DF4611B17ACFA3 /* gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C41F359B44F89B54A7E1 /* gamma.c */; settings = {COMPILER_FLAGS = ""; }; };
+		3C1BE5F4452C40DF9A497A28 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DDC16C244444168163C3A6 /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = ""; }; };
+		4C47573A8B10419890E43B62 /* cocoa_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 544BA0F3C7AA439DA9FD89D9 /* cocoa_joystick.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5A8978666A4F46C39264A6F6 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 05307A56FA1040A3A3FE0665 /* input.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7077DB74A12D4B30B944DA67 /* cocoa_gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B13DDEB601C43A8B209EAF4 /* cocoa_gamma.c */; settings = {COMPILER_FLAGS = ""; }; };
+		725731DBA59E40BA92FF2F8A /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9844F731544C099347F83 /* cocoa_window.m */; settings = {COMPILER_FLAGS = ""; }; };
+		7A88910CCC6E405E9727806A /* joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = D7E343FBFA714ED69425C47B /* joystick.c */; settings = {COMPILER_FLAGS = ""; }; };
+		841C328A73B341F193A08312 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EBFAE17CBB7411A8F674B91 /* json.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A515425BA86D468382833DBB /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FFAC33532A24DEF8F96E229 /* scene.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B38C721DF88343689559E0FA /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 79F8206E067C4FA0BEB1002C /* window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BA93AA4B021D46C4B5025CE5 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 10CC321F29604E70A7ED0B71 /* init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BD07090E814343A6B3532720 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = FC1532B9434B42888ABD04A1 /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D80F0228F72047AD82C73C36 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 76E66AB801264603B777F2D5 /* glew.c */; settings = {COMPILER_FLAGS = ""; }; };
+		DD0BBA79B4804375B581CEB2 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19AE138A8B60489EAC7879E2 /* image.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DD646C1E54F64E8B9697C68D /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = C2E364093ABA4AF780962C5F /* monitor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F9CA93A703FB4F3BAD71F30D /* 03_animate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51C4B73B99804A5DB0CF1B93 /* 03_animate.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FA2FDB1AB9F14346B60AAD94 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = F43771E023834E6490FB8FE4 /* nsgl_context.m */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ACE54CBA5F74B2D8DAECCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20545EA76A54438B93A8E39E;
+			remoteInfo = ZERO_CHECK;
+		};
+		0F14E77EE4AD43718DD0AA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34DCFF1D41C745F39D18501B;
+			remoteInfo = common;
+		};
+		26D3F39348A343A5845462AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA7BFC30C74B159429382A;
+			remoteInfo = glfw;
+		};
+		6785AE5EA6414CEB86D278D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A500BE9097C48C8AFBB92D9;
+			remoteInfo = 03_animate;
+		};
+		8E818AB60A354420BFEEA2D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA7BFC30C74B159429382A;
+			remoteInfo = glfw;
+		};
+		C06E78704C194A4A94025BA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACD97EB4995E45709BFA2818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34DCFF1D41C745F39D18501B;
+			remoteInfo = common;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E80C76C2454F8F8024F0F6 /* tesselation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tesselation.h; path = src/common/tesselation.h; sourceTree = SOURCE_ROOT; };
+		05307A56FA1040A3A3FE0665 /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/common/ext/glfw/src/input.c; sourceTree = SOURCE_ROOT; };
+		0A268A888D61490F98C12A45 /* vmath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vmath.h; path = src/common/vmath.h; sourceTree = SOURCE_ROOT; };
+		10CC321F29604E70A7ED0B71 /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/common/ext/glfw/src/init.c; sourceTree = SOURCE_ROOT; };
+		10F32549056143A1B4AFF1F2 /* clipboard.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clipboard.c; path = src/common/ext/glfw/src/clipboard.c; sourceTree = SOURCE_ROOT; };
+		19AE138A8B60489EAC7879E2 /* image.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image.cpp; path = src/common/image.cpp; sourceTree = SOURCE_ROOT; };
+		1B4E83239DC54E8D8F68CB31 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		23D9EA0EC90E44FBA397EF69 /* wglew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wglew.h; path = src/common/ext/glew/wglew.h; sourceTree = SOURCE_ROOT; };
+		288736F164E341B28AA924F0 /* time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = time.c; path = src/common/ext/glfw/src/time.c; sourceTree = SOURCE_ROOT; };
+		2C64D470716249B685B05316 /* cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = src/common/ext/glfw/src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		2EBFAE17CBB7411A8F674B91 /* json.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json.cpp; path = src/common/json.cpp; sourceTree = SOURCE_ROOT; };
+		31DDC16C244444168163C3A6 /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/common/ext/glfw/src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		32C60E2791E44D6FBB503963 /* common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = src/common/common.h; sourceTree = SOURCE_ROOT; };
+		32CC055446A5409C83B61BDA /* lodepng.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lodepng.h; path = src/common/ext/lodepng/lodepng.h; sourceTree = SOURCE_ROOT; };
+		37583900211D44EE93980C04 /* debug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = debug.h; path = src/common/debug.h; sourceTree = SOURCE_ROOT; };
+		3DF67DF90C844CE69C0D42CE /* image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = image.h; path = src/common/image.h; sourceTree = SOURCE_ROOT; };
+		3FFAC33532A24DEF8F96E229 /* scene.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scene.cpp; path = src/common/scene.cpp; sourceTree = SOURCE_ROOT; };
+		465C13BFA72442FE9F7BCEBF /* glew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glew.h; path = src/common/ext/glew/glew.h; sourceTree = SOURCE_ROOT; };
+		4EDC7B4AC0C44C4A8D90129B /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = src/common/ext/glfw/include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		4F9F992187904C6EA55620DE /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/common/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		51C4B73B99804A5DB0CF1B93 /* 03_animate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 03_animate.cpp; path = src/apps/03_animate.cpp; sourceTree = SOURCE_ROOT; };
+		544BA0F3C7AA439DA9FD89D9 /* cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = src/common/ext/glfw/src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		577A6DB58C7144A39988EFDF /* scene.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scene.h; path = src/common/scene.h; sourceTree = SOURCE_ROOT; };
+		5945576A6695478D9FE02B96 /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = src/common/ext/glfw/include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		5B1A38FF88574A2AB4D8D435 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5D3806D9392E4C43AAF7338D /* nsgl_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_platform.h; path = src/common/ext/glfw/src/nsgl_platform.h; sourceTree = SOURCE_ROOT; };
+		5EF9844F731544C099347F83 /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/common/ext/glfw/src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		6B13DDEB601C43A8B209EAF4 /* cocoa_gamma.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_gamma.c; path = src/common/ext/glfw/src/cocoa_gamma.c; sourceTree = SOURCE_ROOT; };
+		6E34C618CC6A4D258B37668B /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/common/ext/glfw/src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		76E66AB801264603B777F2D5 /* glew.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glew.c; path = src/common/ext/glew/glew.c; sourceTree = SOURCE_ROOT; };
+		79F8206E067C4FA0BEB1002C /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/common/ext/glfw/src/window.c; sourceTree = SOURCE_ROOT; };
+		7AF439EA81CA476AAD019F2B /* cocoa_clipboard.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_clipboard.m; path = src/common/ext/glfw/src/cocoa_clipboard.m; sourceTree = SOURCE_ROOT; };
+		7CDFAF42046048CDB39A31DF /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = json.h; path = src/common/json.h; sourceTree = SOURCE_ROOT; };
+		7EB2031D5F5E486BB3B85EC0 /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		968B2B0737ED4B14B7833D33 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/apps/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B1B2C41F359B44F89B54A7E1 /* gamma.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = gamma.c; path = src/common/ext/glfw/src/gamma.c; sourceTree = SOURCE_ROOT; };
+		B9D4E55A4956410597DB0367 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/common/ext/glfw/src/internal.h; sourceTree = SOURCE_ROOT; };
+		C2E364093ABA4AF780962C5F /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/common/ext/glfw/src/monitor.c; sourceTree = SOURCE_ROOT; };
+		C949F613549248FD898A14CA /* picojson.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = picojson.h; path = src/common/picojson.h; sourceTree = SOURCE_ROOT; };
+		CDDEA00E82E24DCBA30BB89C /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = assign3build/src/common/ext/glfw/src/config.h; sourceTree = SOURCE_ROOT; };
+		D1382874FBD945F18A3C66F7 /* 03_animate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 03_animate; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E343FBFA714ED69425C47B /* joystick.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = joystick.c; path = src/common/ext/glfw/src/joystick.c; sourceTree = SOURCE_ROOT; };
+		DBB8B61EC7B34A2EBB5E7177 /* gls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = gls.h; path = src/common/gls.h; sourceTree = SOURCE_ROOT; };
+		DD262358F16E4EAEA600956B /* lodepng.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = lodepng.cpp; path = src/common/ext/lodepng/lodepng.cpp; sourceTree = SOURCE_ROOT; };
+		DDCBC92462BE4A959F5DB2F6 /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/common/ext/glfw/src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		E39D80848CEB44F0A192BB3F /* glxew.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glxew.h; path = src/common/ext/glew/glxew.h; sourceTree = SOURCE_ROOT; };
+		E84D7AFE456B41E5BFA0F3A9 /* tesselation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tesselation.cpp; path = src/common/tesselation.cpp; sourceTree = SOURCE_ROOT; };
+		EC07749074C5455EA9ADE70B /* libcommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43771E023834E6490FB8FE4 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/common/ext/glfw/src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		F6A8B155BE534418A277128E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/common/ext/glfw/src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FC1532B9434B42888ABD04A1 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/common/ext/glfw/src/context.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2185B11675394692A15D070E /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				D209C554B84A47548A06C32C /* CMake Rules */,
+				1B4E83239DC54E8D8F68CB31 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		390EDB587EF74A218B3763C3 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				5AFF00BD715C41758E454A8B /* Source Files */,
+				5D8759E30BA942B5B0A38295 /* Header Files */,
+				F6A8B155BE534418A277128E /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		5AFF00BD715C41758E454A8B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				10F32549056143A1B4AFF1F2 /* clipboard.c */,
+				7AF439EA81CA476AAD019F2B /* cocoa_clipboard.m */,
+				6B13DDEB601C43A8B209EAF4 /* cocoa_gamma.c */,
+				6E34C618CC6A4D258B37668B /* cocoa_init.m */,
+				544BA0F3C7AA439DA9FD89D9 /* cocoa_joystick.m */,
+				31DDC16C244444168163C3A6 /* cocoa_monitor.m */,
+				2C64D470716249B685B05316 /* cocoa_time.c */,
+				5EF9844F731544C099347F83 /* cocoa_window.m */,
+				FC1532B9434B42888ABD04A1 /* context.c */,
+				B1B2C41F359B44F89B54A7E1 /* gamma.c */,
+				10CC321F29604E70A7ED0B71 /* init.c */,
+				05307A56FA1040A3A3FE0665 /* input.c */,
+				D7E343FBFA714ED69425C47B /* joystick.c */,
+				C2E364093ABA4AF780962C5F /* monitor.c */,
+				F43771E023834E6490FB8FE4 /* nsgl_context.m */,
+				288736F164E341B28AA924F0 /* time.c */,
+				79F8206E067C4FA0BEB1002C /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5D8759E30BA942B5B0A38295 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEA00E82E24DCBA30BB89C /* config.h */,
+				5945576A6695478D9FE02B96 /* glfw3.h */,
+				4EDC7B4AC0C44C4A8D90129B /* glfw3native.h */,
+				DDCBC92462BE4A959F5DB2F6 /* cocoa_platform.h */,
+				B9D4E55A4956410597DB0367 /* internal.h */,
+				5D3806D9392E4C43AAF7338D /* nsgl_platform.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		71B25F7F431743E69C2A9934 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				87C0301C5B0542B5B471C990 /* common */,
+				804CD2A3A91C46E29FF5D7DF /* ext */,
+				B6B09963D4E849F2A520DF61 /* Source Files */,
+				805F1FC8962B4ED886F66B7F /* Header Files */,
+				4F9F992187904C6EA55620DE /* CMakeLists.txt */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		7A225140D572480DAAB4DB1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EB2031D5F5E486BB3B85EC0 /* libglfw3.a */,
+				D1382874FBD945F18A3C66F7 /* 03_animate */,
+				EC07749074C5455EA9ADE70B /* libcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		804CD2A3A91C46E29FF5D7DF /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				9E5829E36DCB448094EFA4D5 /* lodepng */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		805F1FC8962B4ED886F66B7F /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				465C13BFA72442FE9F7BCEBF /* glew.h */,
+				E39D80848CEB44F0A192BB3F /* glxew.h */,
+				23D9EA0EC90E44FBA397EF69 /* wglew.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		87C0301C5B0542B5B471C990 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				32C60E2791E44D6FBB503963 /* common.h */,
+				37583900211D44EE93980C04 /* debug.h */,
+				DBB8B61EC7B34A2EBB5E7177 /* gls.h */,
+				19AE138A8B60489EAC7879E2 /* image.cpp */,
+				3DF67DF90C844CE69C0D42CE /* image.h */,
+				2EBFAE17CBB7411A8F674B91 /* json.cpp */,
+				7CDFAF42046048CDB39A31DF /* json.h */,
+				C949F613549248FD898A14CA /* picojson.h */,
+				3FFAC33532A24DEF8F96E229 /* scene.cpp */,
+				577A6DB58C7144A39988EFDF /* scene.h */,
+				E84D7AFE456B41E5BFA0F3A9 /* tesselation.cpp */,
+				04E80C76C2454F8F8024F0F6 /* tesselation.h */,
+				0A268A888D61490F98C12A45 /* vmath.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		9CF3729E9E6543ABA80335E7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9E5829E36DCB448094EFA4D5 /* lodepng */ = {
+			isa = PBXGroup;
+			children = (
+				DD262358F16E4EAEA600956B /* lodepng.cpp */,
+				32CC055446A5409C83B61BDA /* lodepng.h */,
+			);
+			name = lodepng;
+			sourceTree = "<group>";
+		};
+		A12E098E2A7B4245B09E0060 = {
+			isa = PBXGroup;
+			children = (
+				D7DA46A1BABB406CB78978F4 /* Sources */,
+				ED06E59D0100433B8BD12E6E /* Resources */,
+				7A225140D572480DAAB4DB1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3E30803725345AEB43F1C2B /* 03_animate */ = {
+			isa = PBXGroup;
+			children = (
+				51C4B73B99804A5DB0CF1B93 /* 03_animate.cpp */,
+				968B2B0737ED4B14B7833D33 /* CMakeLists.txt */,
+			);
+			name = 03_animate;
+			sourceTree = "<group>";
+		};
+		B6B09963D4E849F2A520DF61 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				76E66AB801264603B777F2D5 /* glew.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C9BE85FD01924C84B6119E7B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9CF3729E9E6543ABA80335E7 /* CMake Rules */,
+				5B1A38FF88574A2AB4D8D435 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		D209C554B84A47548A06C32C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D7DA46A1BABB406CB78978F4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C9BE85FD01924C84B6119E7B /* ALL_BUILD */,
+				2185B11675394692A15D070E /* ZERO_CHECK */,
+				390EDB587EF74A218B3763C3 /* glfw */,
+				A3E30803725345AEB43F1C2B /* 03_animate */,
+				71B25F7F431743E69C2A9934 /* common */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		ED06E59D0100433B8BD12E6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34DCFF1D41C745F39D18501B /* common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15502F15B78E402BBFDD379F /* Build configuration list for PBXNativeTarget "common" */;
+			buildPhases = (
+				1606AC67D0B942A39F2489F7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = common;
+			productName = common;
+			productReference = EC07749074C5455EA9ADE70B /* libcommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3A500BE9097C48C8AFBB92D9 /* 03_animate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C171B41AA54FD5BDF4A2BA /* Build configuration list for PBXNativeTarget "03_animate" */;
+			buildPhases = (
+				ACE115A9155B48F28A8F8CDD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEA92A2DC35845AF87CB5CCE /* PBXTargetDependency */,
+				E3147ACC9F13441DAEDE69D2 /* PBXTargetDependency */,
+			);
+			name = 03_animate;
+			productName = 03_animate;
+			productReference = D1382874FBD945F18A3C66F7 /* 03_animate */;
+			productType = "com.apple.product-type.tool";
+		};
+		FAEA7BFC30C74B159429382A /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E843089A904754951826F4 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				787ECC801C4C4228963CE7B3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 7EB2031D5F5E486BB3B85EC0 /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACD97EB4995E45709BFA2818 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = FFDA2CECAFC04102907A01EB /* Build configuration list for PBXProject "03_animate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A12E098E2A7B4245B09E0060;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				BDD09E7EA8BC42DE88ACF3F6 /* ALL_BUILD */,
+				20545EA76A54438B93A8E39E /* ZERO_CHECK */,
+				FAEA7BFC30C74B159429382A /* glfw */,
+				3A500BE9097C48C8AFBB92D9 /* 03_animate */,
+				34DCFF1D41C745F39D18501B /* common */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37B3DFD53A5E422AA8AB02FF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pinkmauikitten/Desktop/assignment03/assign3build -f /Users/pinkmauikitten/Desktop/assignment03/assign3build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A16EB0DCDEDF4CD5B9250B12 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pinkmauikitten/Desktop/assignment03/assign3build -f /Users/pinkmauikitten/Desktop/assignment03/assign3build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1606AC67D0B942A39F2489F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D80F0228F72047AD82C73C36 /* glew.c in Sources */,
+				22D7D23607F641B985CE08A4 /* lodepng.cpp in Sources */,
+				DD0BBA79B4804375B581CEB2 /* image.cpp in Sources */,
+				841C328A73B341F193A08312 /* json.cpp in Sources */,
+				A515425BA86D468382833DBB /* scene.cpp in Sources */,
+				1927718B957F46CA86F14C4D /* tesselation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787ECC801C4C4228963CE7B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B8E6290AE2418A8ABC14B1 /* clipboard.c in Sources */,
+				0004E9B423E848B4BD77A7A0 /* cocoa_clipboard.m in Sources */,
+				7077DB74A12D4B30B944DA67 /* cocoa_gamma.c in Sources */,
+				0A691015BF794311AFD4D865 /* cocoa_init.m in Sources */,
+				4C47573A8B10419890E43B62 /* cocoa_joystick.m in Sources */,
+				3C1BE5F4452C40DF9A497A28 /* cocoa_monitor.m in Sources */,
+				21DFAFB97DAC4186BB56F5A3 /* cocoa_time.c in Sources */,
+				725731DBA59E40BA92FF2F8A /* cocoa_window.m in Sources */,
+				BD07090E814343A6B3532720 /* context.c in Sources */,
+				2F612ED377DF4611B17ACFA3 /* gamma.c in Sources */,
+				BA93AA4B021D46C4B5025CE5 /* init.c in Sources */,
+				5A8978666A4F46C39264A6F6 /* input.c in Sources */,
+				7A88910CCC6E405E9727806A /* joystick.c in Sources */,
+				DD646C1E54F64E8B9697C68D /* monitor.c in Sources */,
+				FA2FDB1AB9F14346B60AAD94 /* nsgl_context.m in Sources */,
+				19DC010CDFCD482AB9D5CD5E /* time.c in Sources */,
+				B38C721DF88343689559E0FA /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE115A9155B48F28A8F8CDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9CA93A703FB4F3BAD71F30D /* 03_animate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA35298D21742F2A74202E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A500BE9097C48C8AFBB92D9 /* 03_animate */;
+			targetProxy = 6785AE5EA6414CEB86D278D2 /* PBXContainerItemProxy */;
+		};
+		1DA0307A3960440291F4F163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20545EA76A54438B93A8E39E /* ZERO_CHECK */;
+			targetProxy = 0ACE54CBA5F74B2D8DAECCF8 /* PBXContainerItemProxy */;
+		};
+		6A5804D41C064F928F4E5FF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34DCFF1D41C745F39D18501B /* common */;
+			targetProxy = 0F14E77EE4AD43718DD0AA76 /* PBXContainerItemProxy */;
+		};
+		BF4226F4EAD64327A39EB3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA7BFC30C74B159429382A /* glfw */;
+			targetProxy = 26D3F39348A343A5845462AA /* PBXContainerItemProxy */;
+		};
+		E3147ACC9F13441DAEDE69D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA7BFC30C74B159429382A /* glfw */;
+			targetProxy = 8E818AB60A354420BFEEA2D7 /* PBXContainerItemProxy */;
+		};
+		EEA92A2DC35845AF87CB5CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34DCFF1D41C745F39D18501B /* common */;
+			targetProxy = C06E78704C194A4A94025BA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0213A78EC02244BE87FBDB02 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		0E0E7DDF6BD54D3E84B3CE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+			};
+			name = Debug;
+		};
+		194130DDFFC34B90977451AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug/libcommon.a,
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug/libglfw3.a,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 03_animate;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		2226CF8078DC4B1DBB3EE974 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2C7A546781D04F59AF8D0506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		31245DE312344655890B8C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		53162B05E0D848BF8664932F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
+					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5DC9E76BC7974B6085BC878B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		626CB94F3B1B470EA1F206AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release/libcommon.a,
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release/libglfw3.a,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 03_animate;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		686DB8251A0146EF87E0F0C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo/libcommon.a,
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo/libglfw3.a,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 03_animate;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		70FBE1C66FC846798A6F0721 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		7A3FC6FBDAD74699A1ED56AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
+					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		8A6B439AE65446F08CB7641F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+			};
+			name = MinSizeRel;
+		};
+		91F62D03592E41369502CACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		93A9E421D73C472EB6E10719 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
+					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		942CB6B022954B0189494026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src,
+					/Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "     -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		98A4E3D1DA734150BB7F251B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel/libcommon.a,
+					/Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel/libglfw3.a,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 03_animate;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/apps;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9D7E545502B14ABFABFA21F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/build;
+			};
+			name = Release;
+		};
+		A92F1589BDDA4BFDA2201CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		AE048A0637594A5EA57C8FCA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		BA040E7224954C5399B523CC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C32450E397E74C85BE07973F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		C929FA995A234633B01310D5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F4B58B6DF9F64D5780F6D403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/pinkmauikitten/Desktop/assignment03/src,
+					/Users/pinkmauikitten/Desktop/assignment03/src/apps,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include,
+					/Users/pinkmauikitten/Desktop/assignment03/src/common/ext/lodepng,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15502F15B78E402BBFDD379F /* Build configuration list for PBXNativeTarget "common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C7A546781D04F59AF8D0506 /* Debug */,
+				F4B58B6DF9F64D5780F6D403 /* Release */,
+				AE048A0637594A5EA57C8FCA /* MinSizeRel */,
+				BA040E7224954C5399B523CC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		18C171B41AA54FD5BDF4A2BA /* Build configuration list for PBXNativeTarget "03_animate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194130DDFFC34B90977451AC /* Debug */,
+				626CB94F3B1B470EA1F206AA /* Release */,
+				98A4E3D1DA734150BB7F251B /* MinSizeRel */,
+				686DB8251A0146EF87E0F0C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F663D94C8E94567B144C410 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91F62D03592E41369502CACF /* Debug */,
+				31245DE312344655890B8C4B /* Release */,
+				2226CF8078DC4B1DBB3EE974 /* MinSizeRel */,
+				5DC9E76BC7974B6085BC878B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE11A720333C4F59906C515A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32450E397E74C85BE07973F /* Debug */,
+				A92F1589BDDA4BFDA2201CE4 /* Release */,
+				C929FA995A234633B01310D5 /* MinSizeRel */,
+				70FBE1C66FC846798A6F0721 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E6E843089A904754951826F4 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942CB6B022954B0189494026 /* Debug */,
+				7A3FC6FBDAD74699A1ED56AB /* Release */,
+				53162B05E0D848BF8664932F /* MinSizeRel */,
+				93A9E421D73C472EB6E10719 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFDA2CECAFC04102907A01EB /* Build configuration list for PBXProject "03_animate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E0E7DDF6BD54D3E84B3CE9C /* Debug */,
+				9D7E545502B14ABFABFA21F2 /* Release */,
+				8A6B439AE65446F08CB7641F /* MinSizeRel */,
+				0213A78EC02244BE87FBDB02 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACD97EB4995E45709BFA2818 /* Project object */;
+}

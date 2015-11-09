@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		20545EA76A54438B93A8E39E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 431766357BDE4EDF9DD82112 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				42930C56789C437FA2D5BBDE /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		BDD09E7EA8BC42DE88ACF3F6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 441D520C74F44351B80462DB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				CB9EFF40ADFD4882A706E913 /* CMake Rules */,
+			);
+			dependencies = (
+				0AAA5BD124354649BE054835 /* PBXTargetDependency */,
+				EAE949DE2C85490AAD74A42A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		034428BBE42343D9A0539494 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_clipboard.m */ = {isa = PBXBuildFile; fileRef = 4AC18A69DE70489F9D191535 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_clipboard.m */; settings = {COMPILER_FLAGS = ""; }; };
+		09AF2D2A07EF4705BF67DA0F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 673EB4CA271148F1A5C7A774 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3.h */; settings = {COMPILER_FLAGS = ""; }; };
+		1C7B44F0183F4A268459F41D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_gamma.c */ = {isa = PBXBuildFile; fileRef = 7B60FC77D558408FB0C9A368 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_gamma.c */; settings = {COMPILER_FLAGS = ""; }; };
+		2707B144BB954EE8910B3F2C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/clipboard.c */ = {isa = PBXBuildFile; fileRef = DF10E4BC45BB486DABE76947 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/clipboard.c */; settings = {COMPILER_FLAGS = ""; }; };
+		296CA6B7E67D4BA8920F0645 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 6182B2066F4149E7A59FB297 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_context.m */; settings = {COMPILER_FLAGS = ""; }; };
+		2CEAA5564CCD41CFB65F9A2B /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 23E96C119AD44987BAE32414 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3native.h */; settings = {COMPILER_FLAGS = ""; }; };
+		338871B7EEA145FFACB3D2C9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/context.c */ = {isa = PBXBuildFile; fileRef = 88445E542A97497AB6B071B9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		3EDC4CFE85604BB6BB09B7A9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/init.c */ = {isa = PBXBuildFile; fileRef = C3EEA3352D4F4530889D1BB8 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		447411008DA54932A48314D4 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = AD9D3DA651844B4F879E15A4 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_window.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5737A0E4EA9E48CDAE7DA0D3 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = 228B6D0E5D8D4D3BA252F3CA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_joystick.m */; settings = {COMPILER_FLAGS = ""; }; };
+		576980990E58410392B6F42D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 18E6929958B7425BA210560F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		5F08CA833E0F4EB59AE957FA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = 7C4CBBF328D441A19D14F0D9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		64EE0FF43AE04B82BD9E0510 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 7B92C17F739143E3B0E0BAFA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_platform.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6717A5BAE13447C7A6953090 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = ECC01288A3C54D46B314CAA6 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_init.m */; settings = {COMPILER_FLAGS = ""; }; };
+		6A7ADD8BA03D4178A6AFE94D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/internal.h */ = {isa = PBXBuildFile; fileRef = 731EB544730345B39F2FC70B /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/internal.h */; settings = {COMPILER_FLAGS = ""; }; };
+		6C05A5A023094F92A6156AA0 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_platform.h */ = {isa = PBXBuildFile; fileRef = C15621BA13D74BBAB2F4245C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_platform.h */; settings = {COMPILER_FLAGS = ""; }; };
+		8927253C43C540D098036F36 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/gamma.c */ = {isa = PBXBuildFile; fileRef = 9B91E12708E84EEBAA2B9AC5 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/gamma.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8E35103304884BC1BE1A4A8F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 8D6B4F82B0F04594B0638F34 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_monitor.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9D27844DB8E64DD5BA1B9A0F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/input.c */ = {isa = PBXBuildFile; fileRef = 629FE080CE6D4B1DA44425CE /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/input.c */; settings = {COMPILER_FLAGS = ""; }; };
+		C09D4C69C2EF4895B1C8A9B2 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/window.c */ = {isa = PBXBuildFile; fileRef = 5AF6FF9A1729469BA6B2B182 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D78AB38A7FF24824B3CF38C1 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/monitor.c */ = {isa = PBXBuildFile; fileRef = CC88C60407174917A40EB6DF /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/monitor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D83037F957CD448384EC90B8 /* /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src/config.h */ = {isa = PBXBuildFile; fileRef = D6B2E3F6F00B41E4848AAD23 /* /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src/config.h */; settings = {COMPILER_FLAGS = ""; }; };
+		FB4A6FEC8B1A4E768567E6DA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/joystick.c */ = {isa = PBXBuildFile; fileRef = 263BD92E6DED412196CF9CC1 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/joystick.c */; settings = {COMPILER_FLAGS = ""; }; };
+		FC15DEF8A03649C69BAD9D90 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/time.c */ = {isa = PBXBuildFile; fileRef = 80C22B557F2B45F1989C6A4D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/time.c */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		47D761265B1B4C0E906DAF72 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		58252F9261E6478293C199F6 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		74CB6A18A36B4E9EBC0F16CB = {
+			isa = PBXBuildStyle;
+		};
+		83B4A836E72E4E0B96007902 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D10338AD3C96420F8AF35701 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		6A225014220347E49C323A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD178FA68AA34ABD99BDE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20545EA76A54438B93A8E39E;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B16EF760AED4E6181C7C336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD178FA68AA34ABD99BDE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEA7BFC30C74B159429382A;
+			remoteInfo = glfw;
+		};
+		C825B5FA92374A7D80A847DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD178FA68AA34ABD99BDE736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20545EA76A54438B93A8E39E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07182454A40A4F48A2A4631C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		18E6929958B7425BA210560F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		228B6D0E5D8D4D3BA252F3CA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = src/cocoa_joystick.m; sourceTree = SOURCE_ROOT; };
+		23E96C119AD44987BAE32414 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		263BD92E6DED412196CF9CC1 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/joystick.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = joystick.c; path = src/joystick.c; sourceTree = SOURCE_ROOT; };
+		4823C5B557BD4E9C940933C7 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4AC18A69DE70489F9D191535 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_clipboard.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_clipboard.m; path = src/cocoa_clipboard.m; sourceTree = SOURCE_ROOT; };
+		5AF6FF9A1729469BA6B2B182 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+		6182B2066F4149E7A59FB297 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		629FE080CE6D4B1DA44425CE /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		673EB4CA271148F1A5C7A774 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		731EB544730345B39F2FC70B /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		7B60FC77D558408FB0C9A368 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_gamma.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_gamma.c; path = src/cocoa_gamma.c; sourceTree = SOURCE_ROOT; };
+		7B92C17F739143E3B0E0BAFA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		7C4CBBF328D441A19D14F0D9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = src/cocoa_time.c; sourceTree = SOURCE_ROOT; };
+		80C22B557F2B45F1989C6A4D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = time.c; path = src/time.c; sourceTree = SOURCE_ROOT; };
+		88445E542A97497AB6B071B9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		8D6B4F82B0F04594B0638F34 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		9B91E12708E84EEBAA2B9AC5 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/gamma.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = gamma.c; path = src/gamma.c; sourceTree = SOURCE_ROOT; };
+		AD9D3DA651844B4F879E15A4 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		B4CFA486510F4CFE883315AF /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15621BA13D74BBAB2F4245C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_platform.h; path = src/nsgl_platform.h; sourceTree = SOURCE_ROOT; };
+		C3EEA3352D4F4530889D1BB8 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+		CC88C60407174917A40EB6DF /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		D6B2E3F6F00B41E4848AAD23 /* /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src/config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = ../../../../assign3build/src/common/ext/glfw/src/config.h; sourceTree = SOURCE_ROOT; };
+		DF10E4BC45BB486DABE76947 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/clipboard.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clipboard.c; path = src/clipboard.c; sourceTree = SOURCE_ROOT; };
+		ECC01288A3C54D46B314CAA6 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04368A751ABC4196AC224B4B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1C3DB9395B3D4232A1838E3F /* CMake Rules */,
+				07182454A40A4F48A2A4631C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		0BBAE0D5BDCF4A9B809354CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4CFA486510F4CFE883315AF /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C3DB9395B3D4232A1838E3F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		24BAE814691A42CB83685398 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		49A9C10695C14243A69D913C /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				24BAE814691A42CB83685398 /* CMake Rules */,
+				4823C5B557BD4E9C940933C7 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		5257CAF4B6D543D9A0CC05F7 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2E3F6F00B41E4848AAD23 /* /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src/config.h */,
+				673EB4CA271148F1A5C7A774 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3.h */,
+				23E96C119AD44987BAE32414 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/include/GLFW/glfw3native.h */,
+				7B92C17F739143E3B0E0BAFA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_platform.h */,
+				731EB544730345B39F2FC70B /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/internal.h */,
+				C15621BA13D74BBAB2F4245C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_platform.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		52D35D96144A4C4186761375 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF10E4BC45BB486DABE76947 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/clipboard.c */,
+				4AC18A69DE70489F9D191535 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_clipboard.m */,
+				7B60FC77D558408FB0C9A368 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_gamma.c */,
+				ECC01288A3C54D46B314CAA6 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_init.m */,
+				228B6D0E5D8D4D3BA252F3CA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_joystick.m */,
+				8D6B4F82B0F04594B0638F34 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_monitor.m */,
+				7C4CBBF328D441A19D14F0D9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_time.c */,
+				AD9D3DA651844B4F879E15A4 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_window.m */,
+				88445E542A97497AB6B071B9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/context.c */,
+				9B91E12708E84EEBAA2B9AC5 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/gamma.c */,
+				C3EEA3352D4F4530889D1BB8 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/init.c */,
+				629FE080CE6D4B1DA44425CE /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/input.c */,
+				263BD92E6DED412196CF9CC1 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/joystick.c */,
+				CC88C60407174917A40EB6DF /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/monitor.c */,
+				6182B2066F4149E7A59FB297 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_context.m */,
+				80C22B557F2B45F1989C6A4D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/time.c */,
+				5AF6FF9A1729469BA6B2B182 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		541DD06A87A048C8B92CF8FE /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				52D35D96144A4C4186761375 /* Source Files */,
+				5257CAF4B6D543D9A0CC05F7 /* Header Files */,
+				18E6929958B7425BA210560F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		75893CCD445D450DA9792FD9 = {
+			isa = PBXGroup;
+			children = (
+				99439C7B952A4EE7A0C4BE20 /* Sources */,
+				FF53D5A9356F4BDFAAF6CA50 /* Resources */,
+				0BBAE0D5BDCF4A9B809354CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99439C7B952A4EE7A0C4BE20 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04368A751ABC4196AC224B4B /* ALL_BUILD */,
+				49A9C10695C14243A69D913C /* ZERO_CHECK */,
+				541DD06A87A048C8B92CF8FE /* glfw */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		FF53D5A9356F4BDFAAF6CA50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEA7BFC30C74B159429382A /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468C519FE139422D9A5F1993 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				D230369F23354E0B90B99383 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4193B4B35A994E3A932971A2 /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = B4CFA486510F4CFE883315AF /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD178FA68AA34ABD99BDE736 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = F0150F44A06849A2ABD0BC64 /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				83B4A836E72E4E0B96007902 /* Debug */,
+				58252F9261E6478293C199F6 /* Release */,
+				D10338AD3C96420F8AF35701 /* MinSizeRel */,
+				47D761265B1B4C0E906DAF72 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 75893CCD445D450DA9792FD9;
+			projectDirPath = ../../../../../src/common/ext/glfw;
+			projectRoot = "";
+			targets = (
+				BDD09E7EA8BC42DE88ACF3F6 /* ALL_BUILD */,
+				20545EA76A54438B93A8E39E /* ZERO_CHECK */,
+				FAEA7BFC30C74B159429382A /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		347BD8D9390246A1A207ADDD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		42930C56789C437FA2D5BBDE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw -f /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B691D6346066406FB76FF453 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CB9EFF40ADFD4882A706E913 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw -f /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D230369F23354E0B90B99383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2707B144BB954EE8910B3F2C /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/clipboard.c */,
+				034428BBE42343D9A0539494 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_clipboard.m */,
+				1C7B44F0183F4A268459F41D /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_gamma.c */,
+				6717A5BAE13447C7A6953090 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_init.m */,
+				5737A0E4EA9E48CDAE7DA0D3 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_joystick.m */,
+				8E35103304884BC1BE1A4A8F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_monitor.m */,
+				5F08CA833E0F4EB59AE957FA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_time.c */,
+				447411008DA54932A48314D4 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/cocoa_window.m */,
+				338871B7EEA145FFACB3D2C9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/context.c */,
+				8927253C43C540D098036F36 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/gamma.c */,
+				3EDC4CFE85604BB6BB09B7A9 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/init.c */,
+				9D27844DB8E64DD5BA1B9A0F /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/input.c */,
+				FB4A6FEC8B1A4E768567E6DA /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/joystick.c */,
+				D78AB38A7FF24824B3CF38C1 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/monitor.c */,
+				296CA6B7E67D4BA8920F0645 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/nsgl_context.m */,
+				FC15DEF8A03649C69BAD9D90 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/time.c */,
+				C09D4C69C2EF4895B1C8A9B2 /* /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AAA5BD124354649BE054835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20545EA76A54438B93A8E39E /* ZERO_CHECK */;
+			targetProxy = C825B5FA92374A7D80A847DE /* PBXContainerItemProxy */;
+		};
+		4193B4B35A994E3A932971A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20545EA76A54438B93A8E39E /* ZERO_CHECK */;
+			targetProxy = 6A225014220347E49C323A4F /* PBXContainerItemProxy */;
+		};
+		EAE949DE2C85490AAD74A42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEA7BFC30C74B159429382A /* glfw */;
+			targetProxy = 8B16EF760AED4E6181C7C336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11C77CE6C68A444EADA6B214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/build;
+			};
+			name = Debug;
+		};
+		152744C6CE8646699CED94FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		2702955F77D842DABE1B3A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src, /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		2DF31059018543399F4FE5BD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src, /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		454AC096734F435DACA9F298 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src, /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG   -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		7997FF3D840046C08296AC0E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/build;
+			};
+			name = MinSizeRel;
+		};
+		7E58ED5ED5EB4635B133CE9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		92A3BAD93E06448981E485F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		9DF01DC7DC954482AA21F15D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		9E07DD67D2004C24B68A6692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/build;
+			};
+			name = Release;
+		};
+		9E99705DC2384EF59DE90B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/pinkmauikitten/Desktop/assignment03/bin/xcode/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glfw/src, /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src, );
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "     -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/src;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		AC9DFA886C6F4749A157B0E2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		AD853529E7ED4A918FC6BBEE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		BE0C4442CC9E46ADAE4C9F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		EDFE0B6597754B15A1B25F8F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw/build;
+			};
+			name = RelWithDebInfo;
+		};
+		F254969DD1A7431793E54901 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/pinkmauikitten/Desktop/assignment03/src, /Users/pinkmauikitten/Desktop/assignment03/src/apps, /Users/pinkmauikitten/Desktop/assignment03/src/common, /Users/pinkmauikitten/Desktop/assignment03/src/common/ext/glew, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/pinkmauikitten/Desktop/assignment03/assign3build/src/common/ext/glfw;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		431766357BDE4EDF9DD82112 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE0C4442CC9E46ADAE4C9F08 /* Debug */,
+				7E58ED5ED5EB4635B133CE9A /* Release */,
+				AD853529E7ED4A918FC6BBEE /* MinSizeRel */,
+				F254969DD1A7431793E54901 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		441D520C74F44351B80462DB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A3BAD93E06448981E485F5 /* Debug */,
+				152744C6CE8646699CED94FC /* Release */,
+				9DF01DC7DC954482AA21F15D /* MinSizeRel */,
+				AC9DFA886C6F4749A157B0E2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		468C519FE139422D9A5F1993 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E99705DC2384EF59DE90B75 /* Debug */,
+				2702955F77D842DABE1B3A78 /* Release */,
+				454AC096734F435DACA9F298 /* MinSizeRel */,
+				2DF31059018543399F4FE5BD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0150F44A06849A2ABD0BC64 /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C77CE6C68A444EADA6B214 /* Debug */,
+				9E07DD67D2004C24B68A6692 /* Release */,
+				7997FF3D840046C08296AC0E /* MinSizeRel */,
+				EDFE0B6597754B15A1B25F8F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD178FA68AA34ABD99BDE736 /* Project object */;
+}

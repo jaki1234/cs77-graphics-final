@@ -265,6 +265,7 @@ void simulate(Scene* scene) {
                     vec3f neighborveltotal = zero3f;
                     vec3f particlepos = mesh->pos[j];
                     vec3f particlevel = mesh->simulation->vel[j];
+                    mesh->simulation->vel[j] = zero3f;
                     
                     if (neighbors.size()>1) {
                     //compute new orientation based on neighbors
@@ -289,6 +290,7 @@ void simulate(Scene* scene) {
                         //new velocity orientation = the average of these 3 effects;
                         vec3f newvelo = normalize((sepo+aligno+coheso)/3);
                         mesh->simulation->vel[j] += newvelo;
+                        
                         }
                     }
                 }

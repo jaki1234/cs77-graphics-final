@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "../../../scenes/07_particles_simulated02.json"
+            argument = "../../../scenes/06_particles_simulated01.json"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
